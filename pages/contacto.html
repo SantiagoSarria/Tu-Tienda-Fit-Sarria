@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="icon" href="../images/Logos/favicon-fit.svg" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body class="contenedor__principal">
+    <header class="barra__header">
+      <a href="../index.html"
+        ><img
+          src="../images/logos/tienda-fit-logo.png"
+          alt="logotienda"
+          class="img__header"
+      /></a>
+      <input
+        type="text"
+        alt="buscador"
+        placeholder="¿Que estas buscando?"
+        class="buscador__header"
+      />
+      <a href="#">
+        <img
+          src="../images/carrito-compras.svg"
+          alt="carritodecompras"
+          class="img__header"
+        />
+      </a>
+    </header>
+
+    <nav class="contenido__nav">
+      <ul class="menu__horizontal">
+        <li>
+          <a href="#">Menu Paginas</a>
+          <ul class="menu__vertical">
+            <li>
+              <a href="../index.html">Inicio</a>
+            </li>
+            <li>
+              <a href="./productos.html">Productos</a>
+            </li>
+            <li>
+              <a href="./contacto.html">Contacto</a>
+            </li>
+            <li>
+              <a href="./sobrenos.html">Sobre Nosotros</a>
+            </li>
+            <li>
+              <a href="./rutinas.html">Rutinas</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <nav class="contenido__nav--tablet">
+      <ul class="menu__paginas--tablet">
+        <li>
+          <a href="../index.html">Inicio</a>
+        </li>
+        <li>
+          <a href="./productos.html">Productos</a>
+        </li>
+        <li>
+          <a href="./contacto.html">Contacto</a>
+        </li>
+        <li>
+          <a href="./sobrenos.html">Sobre Nosotros</a>
+        </li>
+        <li>
+          <a href="./rutinas.html">Rutinas</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main id="contacto__main" class="contenido__main">
+      <h1 class="titulo__h1">Contactanos</h1>
+
+      <div class="contenedor__contenido">
+        <h3>¡Completa los datos y recibe cupones, promos y mas!</h3>
+        <div class="nombre__email--form">
+          <h4>Nombre y mail</h4>
+          <input
+            type="text"
+            id="info__formulario"
+            placeholder="Nombre y apellido"
+          />
+          <input
+            type="text"
+            id="info__formulario"
+            placeholder="Correo electronico"
+          />
+        </div>
+
+        <div class="sexo__form">
+          <h4>Sexo</h4>
+          <label for="hombre" class="font__label">Hombre</label>
+          <input type="radio" id="sexo__formulario" name="sexo" />
+          <label for="mujer" class="font__label">Mujer</label>
+          <input type="radio" id="sexo__formulario" name="sexo" />
+        </div>
+
+        <div class="edad__formulario">
+          <h4>Edad</h4>
+          <select name="edad" class="opcion__edad">
+            <option value="menor">-18</option>
+            <option value="mayor-de-18">18-25</option>
+            <option value="hasta-40">25-40</option>
+            <option value="mayor-40">+40</option>
+          </select>
+        </div>
+
+        <div>
+          <h4>Escriba su comentario</h4>
+          <textarea
+            name="comentario"
+            id="comentario__contacto"
+            placeholder="Escriba su comentario"
+          ></textarea>
+        </div>
+        <div class="botones__contendor">
+          <button type="submit">Enviar</button>
+          <button type="reset">Cancelar</button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="contenedor__footer">
+      <div class="contenedor__redes">
+        <h3>Redes y contacto</h3>
+        <ul class="redes__footer">
+          <li>
+            <a href="https://www.instagram.com/">
+              <img
+                src="../images/logos/instagram.png"
+                alt="perfilinstagram"
+                class="img__footer"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://m.facebook.com/login/?locale=es_ES">
+              <img
+                src="../images/logos/facebook.png"
+                alt="perfilfacebook"
+                class="img__footer"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.whatsapp.com/?lang=es">
+              <img
+                src="../images/logos/whatsapp.png"
+                alt="chatwhatsapp"
+                class="img__footer"
+                style="width: 80px; height: auto"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.google.com/intl/es-419/gmail/about/">
+              <img
+                src="../images/logos/mail.png"
+                alt="correo"
+                class="img__footer"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="contenedor__pagos">
+        <h3>Medios de pago</h3>
+        <ul class="pagos__footer">
+          <li>
+            <img
+              src="../images/logos/paypal.png"
+              alt="pagarconpaypal"
+              class="img__footer"
+            />
+          </li>
+          <li>
+            <img
+              src="../images/logos/mastercard.png"
+              alt="pagarconmastercard"
+              class="img__footer"
+            />
+          </li>
+          <li>
+            <img
+              src="../images/logos/visa.png"
+              alt="pagarconvisa"
+              class="img__footer"
+            />
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,305 @@
+body {
+  background-color: rgb(250, 250, 172);
+}
+
+.contenedor__principal {
+  width: 100%;
+  height: 20rem;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, auto);
+
+  grid-template-areas:
+    "header header "
+    "pags pags "
+    "main main "
+    "footer footer ";
+}
+
+.barra__header {
+  background-color: rgba(11, 11, 100, 0.9);
+  grid-area: header;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.barra__header a {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.img__header {
+  width: 60%;
+  margin: 8px 20px;
+  min-width: 30px;
+  max-width: 100px;
+}
+
+.buscador__header {
+  border-radius: 5px;
+  background-color: black;
+  width: 40%;
+  display: flex;
+  text-align: center;
+  min-width: 150px;
+  max-width: 300px;
+}
+
+.contenido__nav {
+  grid-area: pags;
+  width: 100%;
+  height: 40px;
+  margin: 0;
+  background-color: black;
+}
+
+.contenido__nav--tablet {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .contenedor__principal {
+    width: 100%;
+    height: 20rem;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+
+    grid-template-areas:
+      "header header"
+      "pagshor pagshor"
+      "main main"
+      "footer footer";
+  }
+  .contenido__nav {
+    display: none;
+  }
+
+  .contenido__nav--tablet {
+    grid-area: pagshor;
+    background-color: black;
+    display: flex;
+  }
+
+  .menu__paginas--tablet {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .menu__paginas--tablet li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 150%;
+  }
+
+  .menu__paginas--tablet li :hover {
+    color: white;
+    background-color: rgb(30, 30, 30);
+    
+  }
+
+  .contenedor__footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 1000px) {
+  .contenedor__contenido {
+    max-width: 550px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.contenido__nav ul li {
+  list-style-type: none;
+}
+
+.contenido__nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu__horizontal {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.menu__horizontal ul li a {
+  text-decoration: none;
+  color: rgb(222, 220, 217);
+}
+
+.menu__horizontal li:hover {
+  background-color: rgb(118, 117, 117);
+}
+
+.menu__vertical {
+  list-style-type: none;
+  position: absolute;
+  display: none;
+  width: 20%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 5px;
+}
+
+.menu__horizontal li:hover .menu__vertical {
+  display: block;
+}
+
+.menu__vertical li:hover {
+  background-color: black;
+}
+
+.menu__vertical li {
+  display: flex;
+  align-items: flex-start;
+}
+
+.titulo__h1 {
+  color: #870000;
+}
+.contenido__main {
+  grid-area: main;
+  background-image: url(./images/gym-fondo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: unset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 130%;
+  padding-bottom: 60px;
+}
+
+.contenedor__footer {
+  background-color: black;
+  width: 100%;
+  grid-area: footer;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.redes__footer {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 0px;
+}
+
+.pagos__footer {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 0px;
+}
+
+.img__footer {
+  width: 60px;
+  margin-left: 5px;
+}
+
+.contenedor__footer h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+/*contenidogeneral*/
+.contenedor__contenido {
+  background-color: rgba(128, 128, 128, 0.733);
+  border: groove black 2px;
+  border-radius: 5px;
+  justify-content: center;
+}
+
+.contenedor__contenido div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.contenedor__contenido div h3 {
+  width: 100%;
+  color: #870000;
+}
+
+.imagenes__productos {
+  width: 250px;
+  height: 230px;
+  border-radius: 5px;
+  border: groove black;
+  margin: 10px;
+}
+
+.contenedor__contenido :hover {
+  transform: scalex(1.01); 
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+
+.redes__footer li a :hover {
+  transform: scalex(1.03); 
+  transition: .3s;
+}
+
+/*contacto*/
+
+.nombre__email--form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nombre__email--form h4 {
+  margin: 10px;
+}
+
+.sexo__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.edad__formulario {
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor__contenido div h4 {
+  margin: 5px 0 5px 0;
+}
+
+.opcion__edad {
+  max-width: 50px;
+}
+
+#comentario__contacto {
+  min-height: 50px;
+  max-height: 160px;
+}
+
+.rutinas__videos { 
+  margin: 50px;
+}
