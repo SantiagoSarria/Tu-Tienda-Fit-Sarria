@@ -148,6 +148,7 @@ body {
 
 .menu__horizontal li:hover {
   background-color: rgb(118, 117, 117);
+
 }
 
 .menu__vertical {
@@ -222,6 +223,7 @@ body {
   color: white;
   letter-spacing: 2px;
   text-align: center;
+  font-size: 26px;
 }
 
 /*contenidogeneral*/
@@ -237,6 +239,7 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  align-items: center;
 }
 
 .contenedor__contenido div h3 {
@@ -254,7 +257,7 @@ body {
 
 .contenedor__contenido :hover {
   transform: scalex(1.01); 
-  transition: all 0.2s;
+  transition: all 1s;
   cursor: pointer;
 }
 
