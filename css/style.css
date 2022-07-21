@@ -54,14 +54,14 @@ body {
 
 .contenido__nav {
   grid-area: pags;
-  width: 100%;
-  height: 40px;
-  margin: 0;
-  background-color: black;
+  background-color: rgb(11, 11, 100, 0.7);
 }
 
-.contenido__nav--tablet {
-  display: none;
+.paginas__navbar {
+  width: 100%;
+  justify-content: center;
+  font-size: large;
+  font-weight: bold;
 }
 
 @media (min-width: 600px) {
@@ -76,36 +76,9 @@ body {
 
     grid-template-areas:
       "header header"
-      "pagshor pagshor"
+      "pags pags"
       "main main"
       "footer footer";
-  }
-  .contenido__nav {
-    display: none;
-  }
-
-  .contenido__nav--tablet {
-    grid-area: pagshor;
-    background-color: black;
-    display: flex;
-  }
-
-  .menu__paginas--tablet {
-    list-style-type: none;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-  }
-  .menu__paginas--tablet li a {
-    text-decoration: none;
-    color: gray;
-    font-size: 150%;
-  }
-
-  .menu__paginas--tablet li :hover {
-    color: white;
-    background-color: rgb(30, 30, 30);
-    
   }
 
   .contenedor__footer {
@@ -117,60 +90,11 @@ body {
 
 @media (min-width: 1000px) {
   .contenedor__contenido {
-    max-width: 550px;
+    max-width: 700px;
     display: flex;
     flex-wrap: wrap;
+    padding: 30px;
   }
-}
-
-.contenido__nav ul li {
-  list-style-type: none;
-}
-
-.contenido__nav ul li a {
-  text-decoration: none;
-  color: white;
-}
-
-.menu__horizontal {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-}
-
-.menu__horizontal ul li a {
-  text-decoration: none;
-  color: rgb(222, 220, 217);
-}
-
-.menu__horizontal li:hover {
-  background-color: rgb(118, 117, 117);
-
-}
-
-.menu__vertical {
-  list-style-type: none;
-  position: absolute;
-  display: none;
-  width: 20%;
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 5px;
-}
-
-.menu__horizontal li:hover .menu__vertical {
-  display: block;
-}
-
-.menu__vertical li:hover {
-  background-color: black;
-}
-
-.menu__vertical li {
-  display: flex;
-  align-items: flex-start;
 }
 
 .titulo__h1 {
@@ -178,7 +102,7 @@ body {
 }
 .contenido__main {
   grid-area: main;
-  background-image: url(./images/gym-fondo.png);
+  background-image: url(../images/gym-fondo.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: unset;
@@ -240,6 +164,7 @@ body {
   justify-content: center;
   text-align: center;
   align-items: center;
+  margin: 20px;
 }
 
 .contenedor__contenido div h3 {
@@ -247,62 +172,85 @@ body {
   color: #870000;
 }
 
+.card__productos {
+  width: 15rem;
+  height: auto;
+}
+
 .imagenes__productos {
-  width: 250px;
-  height: 230px;
-  border-radius: 5px;
-  border: groove black;
-  margin: 10px;
+  width: 235px;
+  height: 200px;
 }
 
 .contenedor__contenido :hover {
-  transform: scalex(1.01); 
+  transform: scalex(1.01);
   transition: all 1s;
   cursor: pointer;
 }
 
-
 .redes__footer li a :hover {
-  transform: scalex(1.03); 
-  transition: .3s;
+  transform: scalex(1.03);
+  transition: 0.3s;
 }
 
 /*contacto*/
-
-.nombre__email--form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.nombre__email--form h4 {
-  margin: 10px;
-}
-
-.sexo__form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.edad__formulario {
-  display: flex;
+.contenedor__contacto {
+  background-color: rgba(128, 128, 128, 0.733);
+  border: groove black 2px;
+  border-radius: 5px;
   justify-content: center;
 }
 
-.contenedor__contenido div h4 {
-  margin: 5px 0 5px 0;
+.contenedor__contacto div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 20px;
 }
 
-.opcion__edad {
-  max-width: 50px;
+.contenedor__contacto h4 {
+  text-align: center;
 }
 
-#comentario__contacto {
+#contenedor__sexo {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0; 
+}
+
+#contenedor__sexo div {
+  width: 20%;
+}
+
+.comentario__size {
+  max-width: 400px;
+  min-width: 250px;
   min-height: 50px;
   max-height: 160px;
+  font-size: medium;
 }
 
-.rutinas__videos { 
+#botones__contenedor {
+  width: 35%;
   margin: 50px;
+  display: flex;
+
+}
+
+.sobrenos {
+  height: 300px;
+  margin: 20px 0px 200px 0px;
+}
+
+.contenedor__video {
+  width: 30%;
+  margin: 10px;
+}
+
+.rutinas__videos {
+  width: 100%;
+  margin: 20px;
 }

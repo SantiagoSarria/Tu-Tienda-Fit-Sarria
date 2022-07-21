@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rutinas</title>
     <link rel="icon" href="../images/Logos/favicon-fit.svg" />
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
 
   <body class="contenedor__principal">
@@ -32,70 +33,111 @@
       </a>
     </header>
 
-    <nav class="contenido__nav">
-      <ul class="menu__horizontal">
-        <li>
-          <a href="#">Menu Paginas</a>
-          <ul class="menu__vertical">
-            <li>
-              <a href="../index.html">Inicio</a>
+    <nav class="navbar navbar-expand-lg contenido__nav">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse paginas__navbar" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
             </li>
-            <li>
-              <a href="./productos.html">Productos</a>
+            <li class="nav-item">
+              <a class="nav-link" href="./productos.html">Productos</a>
             </li>
-            <li>
-              <a href="./contacto.html">Contacto</a>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
             </li>
-            <li>
-              <a href="./sobrenos.html">Sobre Nosotros</a>
+            <li class="nav-item">
+              <a class="nav-link" href="./sobrenos.html">Sobre Nosotros</a>
             </li>
-            <li>
-              <a href="./rutinas.html">Rutinas</a>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./rutinas.html"
+                >Rutinas</a
+              >
             </li>
           </ul>
-        </li>
-      </ul>
+        </div>
+      </div>
     </nav>
 
-    <nav class="contenido__nav--tablet">
-      <ul class="menu__paginas--tablet">
-        <li>
-          <a href="../index.html">Inicio</a>
-        </li>
-        <li>
-          <a href="./productos.html">Productos</a>
-        </li>
-        <li>
-          <a href="./contacto.html">Contacto</a>
-        </li>
-        <li>
-          <a href="./sobrenos.html">Sobre Nosotros</a>
-        </li>
-        <li>
-          <a href="./rutinas.html">Rutinas</a>
-        </li>
-      </ul>
-    </nav>
+    <main class="contenido__main">
+      <h1 class="titulo__h1">Rutinas</h1>
+      <div class="contenedor__contenido">
+        <div class="contenedor__video">
+          <iframe
+            src="https://www.youtube.com/embed/plSbgSLGMw8"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            class="rutinas__videos"
+          ></iframe>
+        </div>
+        <div class="contenedor__video">
+          <iframe
+            src="https://www.youtube.com/embed/DxkpDN_5-z8"
+            title="Como hacer abducciones con miniband sentada |@vikikateam"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            class="rutinas__videos"
+          ></iframe>
+        </div>
+        <div class="contenedor__video">
+          <iframe
+            src="https://www.youtube.com/embed/KXnOryN4ENc"
+            title="CÓMO ORGANIZAR TU RUTINA DE ENTRENAMIENTO / GUÍA COMPLETA"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            class="rutinas__videos"
+          ></iframe>
+        </div>
+        <div class="contenedor__video">
+          <iframe
+            src="https://www.youtube.com/embed/7HRy8LFtV8M"
+            title="¡EL MEJOR ENTRENAMIENTO PARA PECTORALES! / GUÍA COMPLETA"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            class="rutinas__videos"
+          ></iframe>
+        </div>
+      </div>
+    </main>
+    <!--
 
-    <main class="seccion__videos contenido__main">
-      <h1 class="titulo__h1">Rutinas Fit</h1>
-      <iframe
+        <iframe
         src="https://www.youtube.com/embed/plSbgSLGMw8"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
         class="rutinas__videos"
-      ></iframe>
-      <iframe
+        ></iframe>
+        <iframe
         src="https://www.youtube.com/embed/DxkpDN_5-z8"
         title="Como hacer abducciones con miniband sentada |@vikikateam"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
         class="rutinas__videos"
-      ></iframe>
-    </main>
+        ></iframe>
+      </main>
+    -->
     <footer class="contenedor__footer">
       <div class="contenedor__redes">
         <h3>Redes y contacto</h3>

@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sobre Nosotros</title>
     <link rel="icon" href="../images/Logos/favicon-fit.svg" />
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
 
   <body class="contenedor__principal">
@@ -32,53 +33,49 @@
       </a>
     </header>
 
-    <nav class="contenido__nav">
-      <ul class="menu__horizontal">
-        <li>
-          <a href="#">Menu Paginas</a>
-          <ul class="menu__vertical">
-            <li>
-              <a href="../index.html">Inicio</a>
+    <nav class="navbar navbar-expand-lg contenido__nav">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse paginas__navbar" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
             </li>
-            <li>
-              <a href="./productos.html">Productos</a>
+            <li class="nav-item">
+              <a class="nav-link" href="./productos.html">Productos</a>
             </li>
-            <li>
-              <a href="./contacto.html">Contacto</a>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
             </li>
-            <li>
-              <a href="./sobrenos.html">Sobre Nosotros</a>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./sobrenos.html"
+                >Sobre Nosotros</a
+              >
             </li>
-            <li>
-              <a href="./rutinas.html">Rutinas</a>
+            <li class="nav-item">
+              <a class="nav-link" href="./rutinas.html">Rutinas</a>
             </li>
           </ul>
-        </li>
-      </ul>
+        </div>
+      </div>
     </nav>
 
-    <nav class="contenido__nav--tablet">
-      <ul class="menu__paginas--tablet">
-        <li>
-          <a href="../index.html">Inicio</a>
-        </li>
-        <li>
-          <a href="./productos.html">Productos</a>
-        </li>
-        <li>
-          <a href="./contacto.html">Contacto</a>
-        </li>
-        <li>
-          <a href="./sobrenos.html">Sobre Nosotros</a>
-        </li>
-        <li>
-          <a href="./rutinas.html">Rutinas</a>
-        </li>
-      </ul>
-    </nav>
     <main class="contenido__main">
       <h1 class="titulo__h1">Sobre Nosotros</h1>
-      <div class="contenedor__contenido">
+      <div class="contenedor__contenido sobrenos">
         <h3>Porque comprar con nosotros?</h3>
         <ol class="lista__sobrenos">
           <li>Contamos con el servicio de compra segura de mercado pago</li>
@@ -86,6 +83,10 @@
           <li>
             Ademas comprando en nuestra tienda te aseguras que llegue tu pedido
             entre 3 y 4 dias habiles dependiendo tu provincia
+          </li>
+          <li>
+            Devolucion gratis y reintegro o cambio del productos en caso de
+            alguna falla de fabrica
           </li>
         </ol>
       </div>

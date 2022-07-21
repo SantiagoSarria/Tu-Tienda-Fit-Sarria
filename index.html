@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio Tu Tienda Fit</title>
     <link rel="icon" href="./images/logos/favicon-fit.svg" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body class="contenedor__principal">
@@ -31,107 +32,108 @@
       /></a>
     </header>
 
-    <nav class="contenido__nav">
-      <ul class="menu__horizontal">
-        <li>
-          <a href="#">Menu Paginas</a>
-          <ul class="menu__vertical">
-            <li>
-              <a href="./index.html">Inicio</a>
+    <nav class="navbar navbar-expand-lg contenido__nav">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse paginas__navbar" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Inicio</a
+              >
             </li>
-            <li>
-              <a href="./pages/productos.html">Productos</a>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/productos.html">Productos</a>
             </li>
-            <li>
-              <a href="./pages/contacto.html">Contacto</a>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contacto.html">Contacto</a>
             </li>
-            <li>
-              <a href="./pages/sobrenos.html">Sobre Nosotros</a>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/sobrenos.html"
+                >Sobre Nosotros</a
+              >
             </li>
-            <li>
-              <a href="./pages/rutinas.html">Rutinas</a>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/rutinas.html">Rutinas</a>
             </li>
           </ul>
-        </li>
-      </ul>
-    </nav>
-
-    <nav class="contenido__nav--tablet">
-      <ul class="menu__paginas--tablet">
-        <li>
-          <a href="./index.html">Inicio</a>
-        </li>
-        <li>
-          <a href="./pages/productos.html">Productos</a>
-        </li>
-        <li>
-          <a href="./pages/contacto.html">Contacto</a>
-        </li>
-        <li>
-          <a href="./pages/sobrenos.html">Sobre Nosotros</a>
-        </li>
-        <li>
-          <a href="./pages/rutinas.html">Rutinas</a>
-        </li>
-      </ul>
+        </div>
+      </div>
     </nav>
 
     <main class="contenido__main">
       <h1 class="titulo__h1">Combos Tienda Fit</h1>
       <div class="contenedor__contenido">
-        <div>
-          <h3 class="titulos__h3">Combo 1 $5800</h3>
-            <img
+
+        <div class="card card__productos">
+          <img
             src="./images/productos/combo1.png"
+            class="card-img-top imagenes__productos"
             alt="primercombo"
-            class="imagenes__productos"
-            />
+          />
+          <div class="card-body">
+            <h5 class="card-title">Combo1</h5>
+            <p class="card-text">$5800</p>
+            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+          </div>
         </div>
 
-        <div>
-          <h3 class="titulos__h3">Combo 2 $6700</h3>
-          <img
-            src="./images/productos/combo2.png"
-            alt="segundocombo"
-            class="imagenes__productos"
-          />
+        <div class="card card__productos">
+          <img src="./images/productos/combo2.png" class="card-img-top imagenes__productos" alt="combo2">
+          <div class="card-body">
+            <h5 class="card-title">Combo 2 </h5>
+            <p class="card-text">$6700</p>
+            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+          </div>
         </div>
 
-        <div>
-          <h3 class="titulos__h3">Combo 3 $9100</h3>
-          <img
-            src="./images/productos/combo3.png"
-            alt="tercercombo"
-            class="imagenes__productos"
-          />
+        <div class="card card__productos">
+          <img src="./images/productos/combo3.png" class="card-img-top imagenes__productos" alt="combo3">
+          <div class="card-body">
+            <h5 class="card-title">Combo 3 </h5>
+            <p class="card-text">$11350</p>
+            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+          </div>
         </div>
 
-        <div>
-          <h3 class="titulos__h3">Combo 4 $11350</h3>
-          <img
-            src="./images/productos/combo4.png"
-            alt="cuartocombo"
-            class="imagenes__productos"
-          />
+        <div class="card card__productos">
+          <img src="./images/productos/combo4.png" class="card-img-top imagenes__productos" alt="combo4">
+          <div class="card-body">
+            <h5 class="card-title">Combo 4</h5>
+            <p class="card-text">$9100</p>
+            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+          </div>
         </div>
 
-        <div>
-          <h3 class="titulos__h3">Combo 5 $5600</h3>
-          <img
-            src="./images/productos/combo5.png"
-            alt="quintocombo"
-            class="imagenes__productos"
-          />
+        <div class="card card__productos">
+          <img src="./images/productos/combo5.png" class="card-img-top imagenes__productos" alt="combo5">
+          <div class="card-body">
+            <h5 class="card-title">Combo 5</h5>
+            <p class="card-text">$5600</p>
+            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+          </div>
         </div>
 
-        <div>
-          <h3 class="titulos__h3">Combo 6 $6000</h3>
-          <img
-            src="./images/productos/combo6.png"
-            alt="sextocombo"
-            class="imagenes__productos"
-          />
+
+        <div class="card card__productos">
+          <img src="./images/productos/combo6.png" class="card-img-top imagenes__productos" alt="combo6">
+          <div class="card-body">
+            <h5 class="card-title">Combo 6</h5>
+            <p class="card-text">$6000</p>
+            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+          </div>
         </div>
+
       </div>
     </main>
 
@@ -206,5 +208,6 @@
         </ul>
       </div>
     </footer>
+    <script src="./js/bootstrap.min.js"></script>
   </body>
 </html>

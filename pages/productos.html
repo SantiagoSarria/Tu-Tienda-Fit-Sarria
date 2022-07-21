@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Productos</title>
     <link rel="icon" href="../images/Logos/favicon-fit.svg" />
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
 
   <body class="contenedor__principal">
@@ -32,117 +33,151 @@
       </a>
     </header>
 
-    <nav class="contenido__nav">
-      <ul class="menu__horizontal">
-        <li>
-          <a href="#">Menu Paginas</a>
-          <ul class="menu__vertical">
-            <li>
-              <a href="../index.html">Inicio</a>
+    <nav class="navbar navbar-expand-lg contenido__nav">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse paginas__navbar" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
             </li>
-            <li>
-              <a href="./productos.html">Productos</a>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./productos.html"
+                >Productos</a
+              >
             </li>
-            <li>
-              <a href="./contacto.html">Contacto</a>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
             </li>
-            <li>
-              <a href="./sobrenos.html">Sobre Nosotros</a>
+            <li class="nav-item">
+              <a class="nav-link" href="./sobrenos.html">Sobre Nosotros</a>
             </li>
-            <li>
-              <a href="./rutinas.html">Rutinas</a>
+            <li class="nav-item">
+              <a class="nav-link" href="./rutinas.html">Rutinas</a>
             </li>
           </ul>
-        </li>
-      </ul>
-    </nav>
-
-    <nav class="contenido__nav--tablet">
-      <ul class="menu__paginas--tablet">
-        <li>
-          <a href="../index.html">Inicio</a>
-        </li>
-        <li>
-          <a href="./productos.html">Productos</a>
-        </li>
-        <li>
-          <a href="./contacto.html">Contacto</a>
-        </li>
-        <li>
-          <a href="./sobrenos.html">Sobre Nosotros</a>
-        </li>
-        <li>
-          <a href="./rutinas.html">Rutinas</a>
-        </li>
-      </ul>
+        </div>
+      </div>
     </nav>
 
     <main class="contenido__main">
       <h1 class="titulo__h1">Productos</h1>
       <div class="contenedor__contenido">
-        <div>
-          <h3 class="titulos__h3">Producto 1 $1500</h3>
+        <div class="card card__productos">
           <img
             src="../images/productos/producto1.png"
-            alt="primerproducto"
-            class="imagenes__productos"
+            class="card-img-top imagenes__productos"
+            alt="producto1"
           />
+          <div class="card-body">
+            <h5 class="card-title">Producto 1</h5>
+            <p class="card-text">$1500</p>
+            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+          </div>
         </div>
-        <div>
-          <h3 class="titulos__h3">Producto 2 $2000</h3>
+
+        <div class="card card__productos">
           <img
             src="../images/productos/producto2.png"
-            alt="segunoproducto"
-            class="imagenes__productos"
+            class="card-img-top imagenes__productos"
+            alt="Producto2"
           />
+          <div class="card-body">
+            <h5 class="card-title">Producto 2</h5>
+            <p class="card-text">$2000</p>
+            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+          </div>
         </div>
-        <div>
-          <h3 class="titulos__h3">Producto 3 $850</h3>
+
+        <div class="card card__productos">
           <img
             src="../images/productos/producto3.png"
-            alt="tercerproducto"
-            class="imagenes__productos"
+            class="card-img-top imagenes__productos"
+            alt="Producto3"
           />
+          <div class="card-body">
+            <h5 class="card-title">Producto 3</h5>
+            <p class="card-text">$850</p>
+            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+          </div>
         </div>
-        <div>
-          <h3 class="titulos__h3">Producto 4 $900</h3>
+
+        <div class="card card__productos">
           <img
             src="../images/productos/producto4.png"
-            alt="cuartoproducto"
-            class="imagenes__productos"
+            class="card-img-top imagenes__productos"
+            alt="Producto4"
           />
+          <div class="card-body">
+            <h5 class="card-title">Producto 4</h5>
+            <p class="card-text">$900</p>
+            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+          </div>
         </div>
-        <div>
-          <h3 class="titulos__h3">Producto 5 $770</h3>
+
+        <div class="card card__productos">
           <img
             src="../images/productos/producto5.png"
-            alt="quintoproducto"
-            class="imagenes__productos"
+            class="card-img-top imagenes__productos"
+            alt="Producto5"
           />
+          <div class="card-body">
+            <h5 class="card-title">Producto 5</h5>
+            <p class="card-text">$770</p>
+            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+          </div>
         </div>
-        <div>
-          <h3 class="titulos__h3">Producto 6 $2300</h3>
+
+        <div class="card card__productos">
           <img
             src="../images/productos/producto6.png"
-            alt="sextoproducto"
-            class="imagenes__productos"
+            class="card-img-top imagenes__productos"
+            alt="Producto6"
           />
+          <div class="card-body">
+            <h5 class="card-title">Producto 6</h5>
+            <p class="card-text">$2300</p>
+            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+          </div>
         </div>
-        <div>
-          <h3 class="titulos__h3">Producto 7 $800</h3>
+
+        <div class="card card__productos">
           <img
             src="../images/productos/producto7.png"
-            alt="septimoproducto"
-            class="imagenes__productos"
+            class="card-img-top imagenes__productos"
+            alt="Producto7"
           />
+          <div class="card-body">
+            <h5 class="card-title">Producto 7</h5>
+            <p class="card-text">$800</p>
+            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+          </div>
         </div>
-        <div>
-          <h3 class="titulos__h3">Producto 8 $950</h3>
+
+        <div class="card card__productos">
           <img
             src="../images/productos/producto8.png"
-            alt="octavoproducto"
-            class="imagenes__productos"
+            class="card-img-top imagenes__productos"
+            alt="Producto8"
           />
+          <div class="card-body">
+            <h5 class="card-title">Producto 8</h5>
+            <p class="card-text">$950</p>
+            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+          </div>
         </div>
       </div>
     </main>
@@ -217,5 +252,6 @@
         </ul>
       </div>
     </footer>
+    <script src="../js/bootstrap.min.js"></script>
   </body>
 </html>
