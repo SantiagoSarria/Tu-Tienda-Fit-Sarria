@@ -2,25 +2,9 @@ body {
   background-color: rgb(250, 250, 172);
 }
 
-.contenedor__principal {
-  width: 100%;
-  height: 20rem;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, auto);
-
-  grid-template-areas:
-    "header header "
-    "pags pags "
-    "main main "
-    "footer footer ";
-}
-
+/*header*/
 .barra__header {
-  background-color: rgba(11, 11, 100, 0.9);
-  grid-area: header;
+  background-color: rgba(11, 11, 100, 1);
   width: 100%;
   height: 100%;
   display: flex;
@@ -48,12 +32,13 @@ body {
   width: 40%;
   display: flex;
   text-align: center;
-  min-width: 150px;
+  min-width: 165px;
   max-width: 300px;
+  color: white;
 }
 
+/*navbar*/
 .contenido__nav {
-  grid-area: pags;
   background-color: rgb(11, 11, 100, 0.7);
 }
 
@@ -64,29 +49,16 @@ body {
   font-weight: bold;
 }
 
-@media (min-width: 600px) {
-  .contenedor__principal {
-    width: 100%;
-    height: 20rem;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, auto);
-
-    grid-template-areas:
-      "header header"
-      "pags pags"
-      "main main"
-      "footer footer";
+@keyframes appear {
+  from {
+    opacity: 0;
   }
-
-  .contenedor__footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  to {
+    opacity: 1;
   }
 }
+
+/*contenido principal*/
 
 @media (min-width: 1000px) {
   .contenedor__contenido {
@@ -97,11 +69,27 @@ body {
   }
 }
 
+.container-fluid {
+  padding: 0;
+}
+
+.contenedor__contenido {
+  animation-name: appear;
+  animation-duration: 2s;
+  background-color: rgba(128, 128, 128, 0.733);
+  border: groove black 2px;
+  border-radius: 5px;
+  justify-content: center;
+  max-width: 800px;
+}
+
 .titulo__h1 {
   color: #870000;
+  animation-name: appear;
+  animation-duration: 2s;
 }
+
 .contenido__main {
-  grid-area: main;
   background-image: url(../images/gym-fondo.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -110,52 +98,7 @@ body {
   flex-direction: column;
   align-items: center;
   font-size: 130%;
-  padding-bottom: 60px;
-}
-
-.contenedor__footer {
-  background-color: black;
-  width: 100%;
-  grid-area: footer;
-  align-items: center;
-  padding-top: 30px;
-}
-
-.redes__footer {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-  padding: 0px;
-}
-
-.pagos__footer {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-  padding: 0px;
-}
-
-.img__footer {
-  width: 60px;
-  margin-left: 5px;
-}
-
-.contenedor__footer h3 {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: white;
-  letter-spacing: 2px;
-  text-align: center;
-  font-size: 26px;
-}
-
-/*contenidogeneral*/
-.contenedor__contenido {
-  background-color: rgba(128, 128, 128, 0.733);
-  border: groove black 2px;
-  border-radius: 5px;
-  justify-content: center;
+  padding: 50px;
 }
 
 .contenedor__contenido div {
@@ -172,6 +115,97 @@ body {
   color: #870000;
 }
 
+/*Footer*/
+
+@media (min-width: 1000px) {
+  .contenedor__footer {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-around;
+  }
+}
+
+.contenedor__footer {
+  background-color: rgb(11, 11, 100, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.contenedor__footer h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #870000;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.img__footer {
+  width: 65px;
+  height: 65px;
+  margin-left: 5px;
+  padding: 0;
+}
+
+.redes__footer {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+}
+
+#instagram__hover :hover {
+  background: linear-gradient(
+    218deg,
+    rgba(55, 62, 230, 1) 0%,
+    rgba(229, 77, 56, 1) 53%,
+    rgba(244, 182, 71, 1) 100%
+  );
+  border-radius: 60px;
+  transform: scalex(1.035);
+  transition: 1.3s;
+}
+
+#facebook__hover :hover {
+  background: rgb(4, 2, 113);
+  border-radius: 60px;
+  transform: scalex(1.035);
+  transition: 1.3s;
+}
+
+#whatsapp__hover :hover {
+  background: linear-gradient(
+    218deg,
+    rgba(14, 133, 5, 1) 0%,
+    rgba(4, 182, 39, 1) 100%
+  );
+  border-radius: 60px;
+  transform: scalex(1.035);
+  transition: 1.3s;
+}
+
+#gmail__hover :hover {
+  background: linear-gradient(
+    218deg,
+    rgba(232, 45, 28, 1) 0%,
+    rgba(237, 113, 101, 1) 100%
+  );
+  border-radius: 60px;
+  transform: scalex(1.035);
+  transition: 1.3s;
+}
+.pagos__footer {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 0px;
+}
+
+/*Inicio y Productos*/
+
 .card__productos {
   width: 15rem;
   height: auto;
@@ -182,23 +216,15 @@ body {
   height: 200px;
 }
 
-.contenedor__contenido :hover {
-  transform: scalex(1.01);
-  transition: all 1s;
-  cursor: pointer;
-}
+/*Contacto*/
 
-.redes__footer li a :hover {
-  transform: scalex(1.03);
-  transition: 0.3s;
-}
-
-/*contacto*/
 .contenedor__contacto {
   background-color: rgba(128, 128, 128, 0.733);
   border: groove black 2px;
   border-radius: 5px;
   justify-content: center;
+  animation-name: appear;
+  animation-duration: 4s;
 }
 
 .contenedor__contacto div {
@@ -218,7 +244,7 @@ body {
   display: flex;
   flex-direction: row;
   width: 100%;
-  margin: 0; 
+  margin: 0;
 }
 
 #contenedor__sexo div {
@@ -237,20 +263,40 @@ body {
   width: 35%;
   margin: 50px;
   display: flex;
-
 }
+
+/*Sobre Nosotros*/
 
 .sobrenos {
-  height: 300px;
+  height: fit-content;
   margin: 20px 0px 200px 0px;
+  padding: 2rem;
 }
 
-.contenedor__video {
-  width: 30%;
-  margin: 10px;
-}
+/*Rutinas*/
 
 .rutinas__videos {
   width: 100%;
-  margin: 20px;
+  height: 300px;
+  margin: 10px;
+}
+
+.carousel__detalles {
+  width: 50%;
+  height: 20rem;
+}
+
+.lista__recomendaciones {
+  margin: 20px 0 20rem 0;
+  padding: 2rem;
+}
+
+.lista__recomendaciones h3 {
+  color: #870000;
+  text-align: center;
+  font-weight: bold;
+}
+
+.lista__recomendaciones ol li {
+  margin: 25px;
 }

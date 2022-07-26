@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
 
-  <body class="contenedor__principal">
-    <header class="barra__header">
+  <body class="container-fluid">
+    <header class="barra__header sticky-top">
       <a href="../index.html"
         ><img
           src="../images/logos/tienda-fit-logo.png"
@@ -75,105 +75,119 @@
 
     <main class="contenido__main">
       <h1 class="titulo__h1">Rutinas</h1>
-      <div class="contenedor__contenido">
-        <div class="contenedor__video">
-          <iframe
-            src="https://www.youtube.com/embed/plSbgSLGMw8"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-            class="rutinas__videos"
-          ></iframe>
-        </div>
-        <div class="contenedor__video">
-          <iframe
-            src="https://www.youtube.com/embed/DxkpDN_5-z8"
-            title="Como hacer abducciones con miniband sentada |@vikikateam"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-            class="rutinas__videos"
-          ></iframe>
-        </div>
-        <div class="contenedor__video">
-          <iframe
-            src="https://www.youtube.com/embed/KXnOryN4ENc"
-            title="CÓMO ORGANIZAR TU RUTINA DE ENTRENAMIENTO / GUÍA COMPLETA"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-            class="rutinas__videos"
-          ></iframe>
-        </div>
-        <div class="contenedor__video">
-          <iframe
-            src="https://www.youtube.com/embed/7HRy8LFtV8M"
-            title="¡EL MEJOR ENTRENAMIENTO PARA PECTORALES! / GUÍA COMPLETA"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-            class="rutinas__videos"
-          ></iframe>
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide carousel__detalles"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <iframe
+              src="https://www.youtube.com/embed/KXnOryN4ENc"
+              title="CÓMO ORGANIZAR TU RUTINA DE ENTRENAMIENTO / GUÍA COMPLETA"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              class="rutinas__videos"
+            ></iframe>
+          </div>
+          <div class="carousel-item">
+            <iframe
+              src="https://www.youtube.com/embed/DxkpDN_5-z8"
+              title="Como hacer abducciones con miniband sentada |@vikikateam"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              class="rutinas__videos"
+            ></iframe>
+          </div>
+          <div class="carousel-item">
+            <iframe
+              src="https://www.youtube.com/embed/7HRy8LFtV8M"
+              title="¡EL MEJOR ENTRENAMIENTO PARA PECTORALES! / GUÍA COMPLETA"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              class="rutinas__videos"
+            ></iframe>
+          </div>
         </div>
       </div>
+      <div class="contenedor__contenido lista__recomendaciones">
+        <h3>Recomendaciones</h3>
+        <ol>
+          <li>
+            <strong>Practicar 60 minutos</strong> diarios de actividad física
+            moderada o vigorosa, que pueden alcanzarse también sumando períodos
+            más cortos a lo largo del día.
+          </li>
+          <li>
+            <strong>Calentamiento (5 minutos):</strong> es importante movilizar
+            los diferentes grupos musculares y articulaciones de forma suave y
+            con un programa de estiramientos. Es la mejor manera de preparar al
+            organismo para una actividad física de mayor intensidad y, al mismo
+            tiempo, de prevenir posibles lesiones musculares. Su objetivo es
+            preparar al organismo de forma progresiva para realizar un esfuerzo
+            físico de mayor intensidad y prevenir lesiones del aparato
+            locomotor.
+          </li>
+          <li>
+            <strong>Empezar poco a poco:</strong> es decir no exigirse al
+            comienzo para evitar posibles lesiones y hacer correctos movimientos
+            fisicos.
+          </li>
+          <li>
+            <strong>Enfriamiento (5 minutos):</strong> cuando se vaya a terminar
+            la actividad debe reducirse la intensidad de forma progresiva,
+            haciendo ejercicios de relajación y estiramientos, para evitar un
+            enfriamiento brusco de los músculos y hacer que el ritmo cardíaco y
+            la frecuencia respiratoria se normalicen de a poco.
+          </li>
+        </ol>
+      </div>
     </main>
-    <!--
 
-        <iframe
-        src="https://www.youtube.com/embed/plSbgSLGMw8"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-        class="rutinas__videos"
-        ></iframe>
-        <iframe
-        src="https://www.youtube.com/embed/DxkpDN_5-z8"
-        title="Como hacer abducciones con miniband sentada |@vikikateam"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-        class="rutinas__videos"
-        ></iframe>
-      </main>
-    -->
     <footer class="contenedor__footer">
       <div class="contenedor__redes">
         <h3>Redes y contacto</h3>
         <ul class="redes__footer">
           <li>
-            <a href="https://www.instagram.com/">
+            <a href="https://www.instagram.com/" id="instagram__hover">
               <img
-                src="../images/logos/instagram.png"
+                src="../images/logos/instagram-logo.svg"
                 alt="perfilinstagram"
                 class="img__footer"
               />
             </a>
           </li>
           <li>
-            <a href="https://m.facebook.com/login/?locale=es_ES">
+            <a
+              href="https://m.facebook.com/login/?locale=es_ES"
+              id="facebook__hover"
+            >
               <img
-                src="../images/logos/facebook.png"
+                src="../images/logos/facebook-logo.svg"
                 alt="perfilfacebook"
                 class="img__footer"
               />
             </a>
           </li>
           <li>
-            <a href="https://www.whatsapp.com/?lang=es">
+            <a href="https://www.whatsapp.com/?lang=es" id="whatsapp__hover">
               <img
-                src="../images/logos/whatsapp.png"
+                src="../images/logos/whatsapp-logo.svg"
                 alt="chatwhatsapp"
                 class="img__footer"
-                style="width: 80px; height: auto"
               />
             </a>
           </li>
           <li>
-            <a href="https://www.google.com/intl/es-419/gmail/about/">
+            <a
+              href="https://www.google.com/intl/es-419/gmail/about/"
+              id="gmail__hover"
+            >
               <img
-                src="../images/logos/mail.png"
+                src="../images/logos/gmail-logo.svg"
                 alt="correo"
                 class="img__footer"
               />
@@ -186,21 +200,21 @@
         <ul class="pagos__footer">
           <li>
             <img
-              src="../images/logos/paypal.png"
+              src="../images/logos/paypal-logo.svg"
               alt="pagarconpaypal"
               class="img__footer"
             />
           </li>
           <li>
             <img
-              src="../images/logos/mastercard.png"
+              src="../images/logos/mastercard-logo.svg"
               alt="pagarconmastercard"
               class="img__footer"
             />
           </li>
           <li>
             <img
-              src="../images/logos/visa.png"
+              src="../images/logos/visa-logo.svg"
               alt="pagarconvisa"
               class="img__footer"
             />
@@ -208,5 +222,6 @@
         </ul>
       </div>
     </footer>
+    <script src="../js/bootstrap.min.js"></script>
   </body>
 </html>

@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
 
-  <body class="contenedor__principal">
-    <header class="barra__header">
+  <body class="container-fluid">
+    <header class="barra__header sticky-top">
       <a href="../index.html"
         ><img
           src="../images/logos/tienda-fit-logo.png"
@@ -76,6 +76,12 @@
     <main class="contenido__main">
       <h1 class="titulo__h1">Sobre Nosotros</h1>
       <div class="contenedor__contenido sobrenos">
+        <h2>Objetivo y trayectoria</h2>
+        <p class="fs-4">
+          Somos una Pyme cordobesa de 4 años de antigüedad dedicada plenamente a
+          la salud fisica, estamos enfocados en la venta y asesoramiento en todo
+          producto que pueda usar cualquier persona desde su casa.
+        </p>
         <h3>Porque comprar con nosotros?</h3>
         <ol class="lista__sobrenos">
           <li>Contamos con el servicio de compra segura de mercado pago</li>
@@ -91,43 +97,47 @@
         </ol>
       </div>
     </main>
-
     <footer class="contenedor__footer">
       <div class="contenedor__redes">
         <h3>Redes y contacto</h3>
         <ul class="redes__footer">
           <li>
-            <a href="https://www.instagram.com/">
+            <a href="https://www.instagram.com/" id="instagram__hover">
               <img
-                src="../images/logos/instagram.png"
+                src="../images/logos/instagram-logo.svg"
                 alt="perfilinstagram"
                 class="img__footer"
               />
             </a>
           </li>
           <li>
-            <a href="https://m.facebook.com/login/?locale=es_ES">
+            <a
+              href="https://m.facebook.com/login/?locale=es_ES"
+              id="facebook__hover"
+            >
               <img
-                src="../images/logos/facebook.png"
+                src="../images/logos/facebook-logo.svg"
                 alt="perfilfacebook"
                 class="img__footer"
               />
             </a>
           </li>
           <li>
-            <a href="https://www.whatsapp.com/?lang=es">
+            <a href="https://www.whatsapp.com/?lang=es" id="whatsapp__hover">
               <img
-                src="../images/logos/whatsapp.png"
+                src="../images/logos/whatsapp-logo.svg"
                 alt="chatwhatsapp"
                 class="img__footer"
-                style="width: 80px; height: auto"
               />
             </a>
           </li>
           <li>
-            <a href="https://www.google.com/intl/es-419/gmail/about/">
+            <a
+              href="https://www.google.com/intl/es-419/gmail/about/"
+              id="gmail__hover"
+            >
               <img
-                src="../images/logos/mail.png"
+                src="../images/logos/gmail-logo.svg"
                 alt="correo"
                 class="img__footer"
               />
@@ -140,21 +150,21 @@
         <ul class="pagos__footer">
           <li>
             <img
-              src="../images/logos/paypal.png"
+              src="../images/logos/paypal-logo.svg"
               alt="pagarconpaypal"
               class="img__footer"
             />
           </li>
           <li>
             <img
-              src="../images/logos/mastercard.png"
+              src="../images/logos/mastercard-logo.svg"
               alt="pagarconmastercard"
               class="img__footer"
             />
           </li>
           <li>
             <img
-              src="../images/logos/visa.png"
+              src="../images/logos/visa-logo.svg"
               alt="pagarconvisa"
               class="img__footer"
             />
@@ -162,5 +172,6 @@
         </ul>
       </div>
     </footer>
+    <script src="../js/bootstrap.min.js"></script>
   </body>
 </html>
