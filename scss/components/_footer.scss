@@ -1,0 +1,77 @@
+/*Footer*/
+.contenedor__footer {
+  background-color: $secondary-color;
+  display: $d-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+
+  & h3 {
+    font-family: $title-font;
+    font-size: 30px;
+    font-weight: bold;
+    color: $title-color;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  .redes__footer {
+    list-style-type: none;
+    display: $d-flex;
+    justify-content: space-between;
+    padding: 0px;
+
+    #instagram__hover :hover {
+      background: linear-gradient(
+        218deg,
+        rgba(55, 62, 230, 1) 0%,
+        rgba(229, 77, 56, 1) 53%,
+        rgba(244, 182, 71, 1) 100%
+      );
+      border-radius: 60px;
+      transform: scalex(1.035);
+      transition: 1.3s;
+    }
+
+    #facebook__hover :hover {
+      background: rgb(4, 2, 113);
+      border-radius: 60px;
+      transform: scalex(1.035);
+      transition: 1.3s;
+    }
+
+    #whatsapp__hover :hover {
+      background: linear-gradient(
+        218deg,
+        rgba(14, 133, 5, 1) 0%,
+        rgba(4, 182, 39, 1) 100%
+      );
+      border-radius: 60px;
+      transform: scalex(1.035);
+      transition: 1.3s;
+    }
+
+    #gmail__hover :hover {
+      background: linear-gradient(
+        218deg,
+        rgba(232, 45, 28, 1) 0%,
+        rgba(237, 113, 101, 1) 100%
+      );
+      border-radius: 60px;
+      transform: scalex(1.035);
+      transition: 1.3s;
+    }
+  }
+  .pagos__footer {
+    list-style-type: none;
+    display: $d-flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 0px;
+  }
+  .img__footer {
+    width: 65px;
+    height: 65px;
+    margin-left: 5px;
+    padding: 0;
+  }
+}

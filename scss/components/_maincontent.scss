@@ -1,0 +1,64 @@
+/*Contenido Principal*/
+.container-fluid {
+  padding: 0;
+}
+
+.contenido__main {
+  background-image: url(../images/gym-fondo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: unset;
+  display: $d-flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 130%;
+  padding: 50px;
+
+  .titulo__h1 {
+    color: $title-color;
+    animation-name: appear;
+    animation-duration: 2s;
+  }
+
+  .contenedor__contenido {
+    animation-name: appear;
+    animation-duration: 2s;
+    background-color: rgba(128, 128, 128, 0.733);
+    border: groove black 2px;
+    border-radius: 5px;
+    justify-content: center;
+    max-width: 800px;
+
+    /*Inicio y Productos*/
+
+    .card__productos {
+      width: 15rem;
+      height: auto;
+      display: $d-flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      margin: 20px;
+
+      .imagenes__productos {
+        width: 100%;
+        height: 220px;
+      }
+
+      h5 {
+        width: 100%;
+        color: $title-color;
+      }
+    }
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

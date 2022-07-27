@@ -1,0 +1,12 @@
+//UTILITIES = VARIABLES, FUNCIONES MIXIN
+@import "utilities/variables";
+
+//BASE = RESET, TIPOGRAFIAS
+@import "base/reset";
+
+//COMPONENTS = CODIGO SECCIONADO
+@import "components/header";
+@import "components/navbar";
+@import "components/maincontent";
+@import "components/footer";
+@import "components/mediaqueries";

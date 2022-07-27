@@ -1,0 +1,11 @@
+/*navbar*/
+.contenido__nav {
+  background-color: $secondary-color;
+  
+  .paginas__navbar {
+    width: 100%;
+    justify-content: center;
+    font-size: large;
+    font-weight: bold;
+  }
+}
