@@ -138,18 +138,21 @@
   display: flex;
   justify-content: space-between;
   padding: 0px;
+  /*#facebook__hover :hover {
+    background: rgb(4, 2, 113);
+    border-radius: 60px;
+    transform: scalex(1.035);
+    transition: 1.3s;
+  }*/
 }
-.contenedor__footer .redes__footer #instagram__hover :hover {
+.contenedor__footer .redes__footer #instagram__hover :hover, .contenedor__footer .redes__footer #facebook__hover :hover :hover {
   background: linear-gradient(218deg, rgb(55, 62, 230) 0%, rgb(229, 77, 56) 53%, rgb(244, 182, 71) 100%);
   border-radius: 60px;
   transform: scalex(1.035);
   transition: 1.3s;
 }
-.contenedor__footer .redes__footer #facebook__hover :hover {
+.contenedor__footer .redes__footer #facebook__hover :hover :hover {
   background: rgb(4, 2, 113);
-  border-radius: 60px;
-  transform: scalex(1.035);
-  transition: 1.3s;
 }
 .contenedor__footer .redes__footer #whatsapp__hover :hover {
   background: linear-gradient(218deg, rgb(14, 133, 5) 0%, rgb(4, 182, 39) 100%);

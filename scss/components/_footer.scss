@@ -20,7 +20,7 @@
     justify-content: space-between;
     padding: 0px;
 
-    #instagram__hover :hover {
+    .instagram__img :hover {
       background: linear-gradient(
         218deg,
         rgba(55, 62, 230, 1) 0%,
@@ -32,14 +32,22 @@
       transition: 1.3s;
     }
 
-    #facebook__hover :hover {
+    .facebook__img :hover{
+      @extend #instagram__hover; :hover {
+        background: rgb(4, 2, 113);
+      } 
+
+      
+    }
+
+    /*#facebook__hover :hover {
       background: rgb(4, 2, 113);
       border-radius: 60px;
       transform: scalex(1.035);
       transition: 1.3s;
-    }
+    }*/
 
-    #whatsapp__hover :hover {
+    .whatsapp__img :hover {
       background: linear-gradient(
         218deg,
         rgba(14, 133, 5, 1) 0%,
@@ -50,7 +58,7 @@
       transition: 1.3s;
     }
 
-    #gmail__hover :hover {
+    .gmail__img :hover {
       background: linear-gradient(
         218deg,
         rgba(232, 45, 28, 1) 0%,
