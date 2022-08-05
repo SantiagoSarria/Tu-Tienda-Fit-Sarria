@@ -64,16 +64,12 @@
 }
 .contenido__main .titulo__h1 {
   color: #870000;
-  -webkit-animation-name: appear;
-          animation-name: appear;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation-name: appear;
+  animation-duration: 2s;
 }
 .contenido__main .contenedor__contenido {
-  -webkit-animation-name: appear;
-          animation-name: appear;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation-name: appear;
+  animation-duration: 2s;
   background-color: rgba(128, 128, 128, 0.733);
   border: groove black 2px;
   border-radius: 5px;
@@ -100,15 +96,6 @@
   color: #870000;
 }
 
-@-webkit-keyframes appear {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 @keyframes appear {
   from {
     opacity: 0;
@@ -125,6 +112,9 @@
   align-items: center;
   padding: 20px;
 }
+.contenedor__footer .testing {
+  display: block;
+}
 .contenedor__footer h3 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 30px;
@@ -133,48 +123,43 @@
   letter-spacing: 2px;
   text-align: center;
 }
-.contenedor__footer .redes__footer {
+.contenedor__footer .redes__footer, .contenedor__footer .pagos__footer {
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
-  padding: 0px;
-  /*#facebook__hover :hover {
-    background: rgb(4, 2, 113);
-    border-radius: 60px;
-    transform: scalex(1.035);
-    transition: 1.3s;
-  }*/
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #0b0b64;
+  border-radius: 10px;
 }
-.contenedor__footer .redes__footer #instagram__hover :hover, .contenedor__footer .redes__footer #facebook__hover :hover :hover {
+.contenedor__footer .redes__footer #instagram__hover :hover, .contenedor__footer .pagos__footer #instagram__hover :hover {
   background: linear-gradient(218deg, rgb(55, 62, 230) 0%, rgb(229, 77, 56) 53%, rgb(244, 182, 71) 100%);
   border-radius: 60px;
   transform: scalex(1.035);
   transition: 1.3s;
 }
-.contenedor__footer .redes__footer #facebook__hover :hover :hover {
-  background: rgb(4, 2, 113);
+.contenedor__footer .redes__footer #facebook__hover :hover, .contenedor__footer .pagos__footer #facebook__hover :hover {
+  background: linear-gradient(218deg, rgb(10, 10, 188) 0%, rgb(4, 12, 165) 100%);
+  border-radius: 60px;
+  transform: scalex(1.035);
+  transition: 1.3s;
 }
-.contenedor__footer .redes__footer #whatsapp__hover :hover {
+.contenedor__footer .redes__footer #whatsapp__hover :hover, .contenedor__footer .pagos__footer #whatsapp__hover :hover {
   background: linear-gradient(218deg, rgb(14, 133, 5) 0%, rgb(4, 182, 39) 100%);
   border-radius: 60px;
   transform: scalex(1.035);
   transition: 1.3s;
 }
-.contenedor__footer .redes__footer #gmail__hover :hover {
+.contenedor__footer .redes__footer #gmail__hover :hover, .contenedor__footer .pagos__footer #gmail__hover :hover {
   background: linear-gradient(218deg, rgb(232, 45, 28) 0%, rgb(237, 113, 101) 100%);
   border-radius: 60px;
   transform: scalex(1.035);
   transition: 1.3s;
 }
 .contenedor__footer .pagos__footer {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-  padding: 0px;
+  justify-content: space-between;
 }
 .contenedor__footer .img__footer {
-  width: 65px;
+  width: 60px;
   height: 65px;
   margin-left: 5px;
   padding: 0;

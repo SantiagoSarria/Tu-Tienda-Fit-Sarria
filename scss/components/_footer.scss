@@ -6,6 +6,10 @@
   align-items: center;
   padding: 20px;
 
+  .testing {
+    display: block;
+  }
+
   & h3 {
     font-family: $title-font;
     font-size: 30px;
@@ -17,10 +21,12 @@
   .redes__footer {
     list-style-type: none;
     display: $d-flex;
-    justify-content: space-between;
-    padding: 0px;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: $main-color;
+    border-radius: 10px;
 
-    .instagram__img :hover {
+    #instagram__hover :hover {
       background: linear-gradient(
         218deg,
         rgba(55, 62, 230, 1) 0%,
@@ -32,22 +38,17 @@
       transition: 1.3s;
     }
 
-    .facebook__img :hover{
-      @extend #instagram__hover; :hover {
-        background: rgb(4, 2, 113);
-      } 
-
-      
-    }
-
-    /*#facebook__hover :hover {
-      background: rgb(4, 2, 113);
+    #facebook__hover :hover {
+      background: linear-gradient(
+        218deg,
+        rgb(10, 10, 188) 0%,
+        rgb(4, 12, 165) 100%);
       border-radius: 60px;
       transform: scalex(1.035);
       transition: 1.3s;
-    }*/
+    }
 
-    .whatsapp__img :hover {
+    #whatsapp__hover :hover {
       background: linear-gradient(
         218deg,
         rgba(14, 133, 5, 1) 0%,
@@ -58,7 +59,7 @@
       transition: 1.3s;
     }
 
-    .gmail__img :hover {
+    #gmail__hover :hover {
       background: linear-gradient(
         218deg,
         rgba(232, 45, 28, 1) 0%,
@@ -70,16 +71,14 @@
     }
   }
   .pagos__footer {
-    list-style-type: none;
-    display: $d-flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    padding: 0px;
+    @extend .redes__footer; 
+    justify-content: space-between;   
   }
   .img__footer {
-    width: 65px;
+    width: 60px;
     height: 65px;
     margin-left: 5px;
     padding: 0;
   }
 }
+
