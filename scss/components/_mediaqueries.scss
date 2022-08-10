@@ -1,13 +1,13 @@
 @media (min-width: 1000px) {
-    .contenedor__contenido {
-      max-width: 700px;
-      display: $d-flex;
-      flex-wrap: wrap;
-      padding: 30px;
-    }
-    .contenedor__footer {
-        display: $d-flex;
-        flex-direction: row !important;
-        justify-content: space-around;
-      }
+  .contenedor__contenido {
+    max-width: 700px;
+    display: $d-flex;
+    flex-wrap: wrap;
+    padding: 30px;
   }
+  .contenedor__footer {
+    display: $d-flex;
+    flex-direction: row !important;
+    justify-content: space-around;
+  }
+}

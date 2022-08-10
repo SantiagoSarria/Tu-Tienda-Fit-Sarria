@@ -1,15 +1,18 @@
 /*Colors*/
-$main-color: #0b0b64;
-$secondary-color: rgba(11, 11, 100, 0.7);
-$title-color:  #870000;
+$title-color: #870000;
 $text-color: rgb(198, 198, 198);
 
 /*Font*/
 $title-font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 $text-font: "Roboto, sans-serif";
 
-
 /*Display*/
 $d-flex: flex;
 
-
+/*Map*/
+$colores: (
+  "bluefit": #0b0b64,
+  "lightblue": #0a0ab9,
+  "lighterblue": #0000ff,
+  "lightestblue": rgba(11, 11, 100, 0.7),
+);

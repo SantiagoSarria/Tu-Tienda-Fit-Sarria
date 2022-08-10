@@ -1,6 +1,8 @@
 /*Colors*/
 /*Font*/
 /*Display*/
+/*Map*/
+/*Sobre nosotros y rutinas*/
 @import url("https://fonts.googleapis.com/css2?family=Quintessential&family=Roboto:wght@300&display=swap");
 /*Header*/
 .barra__header {
@@ -28,7 +30,7 @@
   background-color: rgb(21, 20, 20);
   width: 40%;
   display: flex;
-  text-align: center;
+  text-align: left;
   min-width: 165px;
   max-width: 300px;
   color: rgb(198, 198, 198);
@@ -104,6 +106,18 @@
     opacity: 1;
   }
 }
+/*Sobre nos y Rutinas*/
+h3 {
+  color: #870000;
+}
+
+p {
+  font-size: 22px;
+  color: rgb(0, 0, 0);
+  line-height: 1.5rem;
+  padding: 10px 20px;
+}
+
 /*Footer*/
 .contenedor__footer {
   background-color: rgba(11, 11, 100, 0.7);
@@ -111,9 +125,6 @@
   flex-direction: column;
   align-items: center;
   padding: 20px;
-}
-.contenedor__footer .testing {
-  display: block;
 }
 .contenedor__footer h3 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -128,7 +139,7 @@
   display: flex;
   justify-content: space-around;
   padding: 10px;
-  background-color: #0b0b64;
+  background-color: #0000ff;
   border-radius: 10px;
 }
 .contenedor__footer .redes__footer #instagram__hover :hover, .contenedor__footer .pagos__footer #instagram__hover :hover {
@@ -159,7 +170,7 @@
   justify-content: space-between;
 }
 .contenedor__footer .img__footer {
-  width: 60px;
+  width: 65px;
   height: 65px;
   margin-left: 5px;
   padding: 0;

@@ -1,0 +1,9 @@
+/*Sobre nosotros y rutinas*/
+@mixin texto($size, $color, $lineheight) {
+  font-size: $size;
+  color: $color;
+  line-height: $lineheight;
+  padding: 10px 20px;
+}
+
+

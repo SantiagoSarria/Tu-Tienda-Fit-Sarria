@@ -62,3 +62,12 @@
     opacity: 1;
   }
 }
+
+/*Sobre nos y Rutinas*/
+h3 {
+  color: $title-color;
+}
+
+p {
+  @include texto(22px, rgb(0, 0, 0), 1.5rem);
+}

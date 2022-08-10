@@ -1,14 +1,10 @@
 /*Footer*/
 .contenedor__footer {
-  background-color: $secondary-color;
+  background-color: map-get($map: $colores, $key: "lightestblue");
   display: $d-flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
-
-  .testing {
-    display: block;
-  }
 
   & h3 {
     font-family: $title-font;
@@ -23,7 +19,7 @@
     display: $d-flex;
     justify-content: space-around;
     padding: 10px;
-    background-color: $main-color;
+    background-color: map-get($map: $colores, $key: "lighterblue");
     border-radius: 10px;
 
     #instagram__hover :hover {
@@ -42,7 +38,8 @@
       background: linear-gradient(
         218deg,
         rgb(10, 10, 188) 0%,
-        rgb(4, 12, 165) 100%);
+        rgb(4, 12, 165) 100%
+      );
       border-radius: 60px;
       transform: scalex(1.035);
       transition: 1.3s;
@@ -71,14 +68,13 @@
     }
   }
   .pagos__footer {
-    @extend .redes__footer; 
-    justify-content: space-between;   
+    @extend .redes__footer;
+    justify-content: space-between;
   }
   .img__footer {
-    width: 60px;
+    width: 65px;
     height: 65px;
     margin-left: 5px;
     padding: 0;
   }
 }
-
