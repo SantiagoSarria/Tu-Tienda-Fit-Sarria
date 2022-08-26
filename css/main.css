@@ -53,6 +53,10 @@
   padding: 0;
 }
 
+.not-found {
+  height: 100vh;
+}
+
 .contenido__main {
   background-image: url(../images/gym-fondo.png);
   background-repeat: no-repeat;
